@@ -1,0 +1,45 @@
+#dos{
+    background-color: red;
+    color: white;
+}
+body{
+    background-image: url(imgs/old-cement-wall-texture_1149-1280.jpg)
+}
+h1{
+    background-color: rgb(196, 0, 0);
+    border: 5px, solid, rgb(141, 23, 23);
+    border-radius: 20px;
+    color: aliceblue;
+     display: block; 
+    margin: auto;
+    margin: 50px;
+    margin-top: 5px;
+}
+.mainDiv{
+    display: grid;
+    align-items: center;
+    text-align: center;
+    background-color:rgb(65, 65, 65);
+    border-radius: 20px;
+    height: 915px;
+    border: 10px, solid, rgb(85, 85, 85);
+}
+button{
+    text-align: center;
+    width: 200px;
+    
+}
+.buttons{
+    display: block; 
+    margin: auto;
+    margin-bottom: 600px;
+}
+input
+{
+    text-align: center;
+    width: 200px;
+}
+.inputs{
+    display: block; 
+    margin: auto;
+}
