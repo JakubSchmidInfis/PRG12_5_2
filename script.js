@@ -7,12 +7,25 @@ const name = document.getElementById("name");
 const desc = document.getElementById("desc");
 const auth = document.getElementById("auth");
 
-Reset();
+const obrazek = document.getElementById("obrazek");
+const jmeno = document.getElementById("jmeno");
+const popis = document.getElementById("popis");
+const autor = document.getElementById("autor");
 
-async function Reset()
+restart();
+
+function restart()
 {
-    const data = await fetch("https://api.janmotlik.dev/add-brainrot");
-    data = data.json();
+    fetch("https://api.janmotlik.dev/random-brainrot", {method: "GET"})
+    .then(response => response.json())
+    .then(data =>{
+        obrazek.src = data.imageUrl;
+        jmeno.textContent = data.name;
+        popis.textContent = data.description;
+        autor.textContent = data.author;
+        
+    
+    })
     
     
 }
@@ -65,6 +78,10 @@ async function Post(){
         alert("Chyba kódu " + response.status + " -> " + errorText);
         return;
     }
+    url.value = "";
+    name.value = "";
+    desc.value = "";
+    auth.value = "";
     const data = await response.text();
     console.log("Server odpověděl: ", data);
 }
