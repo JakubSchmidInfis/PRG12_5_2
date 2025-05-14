@@ -48,4 +48,22 @@ input
 }
 #obrazek{
     width: 200px;
+    border-radius: 20px;
+}
+#viewDiv{
+    background-color: rgb(196, 0, 0);
+    border: 5px, solid, rgb(141, 23, 23);
+    border-radius: 20px;
+    padding: 10px;
+}
+#textDiv{
+    background-color: antiquewhite;
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+#jmeno{
+    margin-bottom: 20px;
+    background-color:rgb(65, 65, 65);
+    border: 10px, solid, rgb(85, 85, 85);
 }
