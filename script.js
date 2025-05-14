@@ -12,16 +12,19 @@ function DoS()
 {
     num = prompt("Kolik?");
     num = Number(num);
-    if(num > 2000)
+    if(num > 5)
     {
-        alert("Ani hovno, Pinďo")
+        alert("Nech Motlíka žít panebože!")
     }
     else
     {
+    alert("Posílá se " + num + " kopií tvého brainrot zvířete.")
     for(i = 0; i < num ; i++)
     {
+        
        Post(); 
     }
+    alert("Poslání " + num + " kopií tvého brainrot zvířete bylo úspěšné!")
     }
     
     
@@ -49,6 +52,7 @@ async function Post(){
         const errorText = await response.text();
         console.error("Chyba vole: "+ response.status);
         console.error("Chyba vole: "+ errorText);
+        alert("Chyba kódu " + response.status + " -> " + errorText);
         return;
     }
     const data = await response.text();

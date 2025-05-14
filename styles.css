@@ -21,7 +21,7 @@ h1{
     text-align: center;
     background-color:rgb(65, 65, 65);
     border-radius: 20px;
-    height: 915px;
+    height: 815px;
     border: 10px, solid, rgb(85, 85, 85);
 }
 button{
@@ -32,7 +32,6 @@ button{
 .buttons{
     display: block; 
     margin: auto;
-    margin-bottom: 600px;
 }
 input
 {
@@ -40,6 +39,10 @@ input
     width: 200px;
 }
 .inputs{
+    display: block; 
+    margin: auto;
+}
+#viewDiv{
     display: block; 
     margin: auto;
 }
