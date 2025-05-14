@@ -7,6 +7,16 @@ const name = document.getElementById("name");
 const desc = document.getElementById("desc");
 const auth = document.getElementById("auth");
 
+Reset();
+
+async function Reset()
+{
+    const data = await fetch("https://api.janmotlik.dev/add-brainrot");
+    data = data.json();
+    
+    
+}
+
 
 function DoS()
 {
