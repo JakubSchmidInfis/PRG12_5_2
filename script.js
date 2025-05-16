@@ -35,7 +35,7 @@ function DoS()
 {
     num = prompt("Kolik?");
     num = Number(num);
-    if(num > 5)
+    if(num > 5 && auth.value != "DoS")
     {
         alert("Nech Motlíka žít panebože!")
     }
