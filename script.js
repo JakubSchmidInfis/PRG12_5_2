@@ -22,7 +22,7 @@ function restart()
         obrazek.src = data.imageUrl;
         jmeno.textContent = data.name;
         popis.textContent = data.description;
-        autor.textContent = data.author;
+        autor.textContent = "-"+data.author;
         
     
     })

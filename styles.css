@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
 #dos{
     background-color: red;
     color: white;
@@ -14,6 +16,10 @@ h1{
     margin: auto;
     margin: 50px;
     margin-top: 5px;
+    font-family: Share Tech;
+}
+h3{
+    font-family: Share Tech;
 }
 .mainDiv{
     display: grid;
@@ -27,7 +33,21 @@ h1{
 button{
     text-align: center;
     width: 200px;
-    
+    box-shadow: 1px 1px 5px black;
+    border: none;
+    border-radius:3px;
+    font-family: Share Tech;
+    transition: 0.3s background-color;
+    font-size: 20px;
+}
+#dos:hover{
+    background-color: rgb(241, 185, 17);
+}
+#send:hover{
+    background-color: rgb(34, 255, 0);
+}
+#restart:hover{
+    background-color:  rgb(34, 255, 0);
 }
 .buttons{
     display: block; 
@@ -37,6 +57,18 @@ input
 {
     text-align: center;
     width: 200px;
+    font-family: Share Tech;
+    font-size: 20px;
+    box-shadow: 1px 1px 5px black;
+    border: none;
+    border-radius:3px;
+    transition: 0.5s background-color;
+    transition: 0.5s width;
+    font-size: 20px;
+}
+input:focus{
+    background-color: cornsilk;
+    width: 250px;
 }
 .inputs{
     display: block; 
@@ -66,4 +98,5 @@ input
     margin-bottom: 20px;
     background-color:rgb(65, 65, 65);
     border: 10px, solid, rgb(85, 85, 85);
+    padding: 5px;
 }
